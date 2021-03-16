@@ -1,3 +1,115 @@
-div {
-    height: 150px;
+:root {
+    font-size: 16px;
 }
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'sansationregular';
+}
+
+.leftcolumn, .footer-icons {
+    background-color: #5272D0;
+}
+
+.cvpicture {
+    border-radius: 50%;
+    border: 4px solid rgba(64,64,64,0.3);
+}
+
+.projects {
+    width: 100%;
+}
+
+.projects__img {
+    max-width: 100%;
+    scale: 1;
+    transition: 800ms;
+    border: solid 2px #0030bf;
+    filter: grayscale(0.6);
+    border-radius: 25px;
+}
+
+@keyframes hoverimg {
+    0% {
+		transform: none;
+    }
+    25% {
+		transform: translateX(5px);
+    }
+	50% {
+		transform: translateX(-5px);
+	}
+	75% {
+		transform: none;
+	}
+    100% {
+		scale: 1.1;
+    }
+}
+
+
+.projects__img:hover {
+    filter: grayscale(0);
+    animation-name: hoverimg;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+}
+
+body > * {
+    padding: 0px;
+}
+
+footer i {
+    color: white;
+    font-size: 3rem;
+    transition: 800ms;
+}
+
+footer i:hover {
+    scale: 1.2;
+    rotate: 1turn;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1 span {
+    color: #5272D0;
+}
+
+h2 span {
+    text-decoration: underline #5272D0 ;
+}
+
+.h2section {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-right: 5%;
+    border-bottom: 3px solid #5272d0;
+    font-size: 1.75rem;
+}
+
+h3 {
+    text-align: center;
+    color: #5272D0;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.leftcolumn p {
+    padding: 0px 40px;
+    color: white;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fas.fa-briefcase {
+    padding-right: 30px;
+    color: #5272d0;
+}
+
